@@ -1,0 +1,13 @@
+.collection img {
+  filter: grayscale(80%);
+  transition: 0.2s;
+}
+.collection img:hover {
+  filter: grayscale(0);
+}
+
+@media screen and (max-width: 768px) {
+  .collection .top {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

@@ -1,6 +1,8 @@
 import React from "react"
 import PopularData from "./PopData"
 import Slider from "react-slick"
+import { Link } from "react-router-dom"
+
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
@@ -74,6 +76,9 @@ const Cards = () => {
                     </h3>
                   </div>
                 </div>
+                <Link to={`/popularsingle/${value.id}`} className='blogItem-link'>
+                  <i className='fas fa-external-link-alt'></i>
+                </Link>
               </div>
             </>
           )

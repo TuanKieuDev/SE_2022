@@ -10,6 +10,8 @@ import Destinations from "./Components/Destinations/Home"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 import SinglePage from "./SinglePage/SinglePage"
 
+import PopularSingle from "./Components/HomeSection/popular/popular-single-page/PopularSingle"
+
 /*-------------blog------------ */
 import Blog from "./Components/Blog/Blog"
 import BlogSingle from "./Components/Blog/blog-single-page/BlogSingle"
@@ -33,6 +35,9 @@ function App() {
           <Route path='/singlepage/:id' component={SinglePage} />
           <Route path='/blog' exact component={Blog} />
           <Route path='/blogsingle/:id' component={BlogSingle} />
+
+          <Route path='/popularsingle/:id' component={PopularSingle}/>
+
           <Route path='/testimonial' component={Testimonial} />
           <Route path='/contact' component={Contact} />
           <Route path='/sign-in' component={Login} />
